@@ -16,24 +16,10 @@ $bg-primary: #151519;
 $bg-secondary: #1c1c1f;
 
 
-.icon{
-  width: 24px;
-  height: 24px;
-}
-
-ul {
-  border-left: 2px solid #ff7b72 !important;
-  list-style-type: none;
-}
-
-li{
-  font-size: 20px !important;
-}
 
 .container{
   min-height: 100vh;
   position: relative;
- 
 }
 
 
@@ -70,7 +56,6 @@ body {
   color: #79c0ff;
 }
 
-
 .textsecondary{
  color: #ccc !important;
 }
@@ -85,45 +70,17 @@ a {
  
 }
 
-
-
 .center{
   justify-content: center !important;
   align-items: center!important;
 }
 
-.layer1{
-  --bg-image: url('./Components/Assets/circles.svg');
-  --bg-image-opacity: 0.15;
-  
-  position: relative;
-  isolation: isolate;
-}
-
-.layer1::after{
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  //background: pink;
-  opacity: var(--bg-image-opacity);
-
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .App {
-  
-  
   background-color: $background;
   color: $text-primary;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 }
-
-
 
 
 .lead {
@@ -136,61 +93,6 @@ a {
   word-wrap: break-word;
   display: block !important;
 }
-
-.card_image img {
-  background-color: $background !important;
-  max-width: 100%;
-  width: 100%;
-  height: 300PX;
-  object-fit:cover;
-  object-position: center;
-  border-radius: 8px !important;
-}
-
-
-
-
-.projectcard {
- 
-  margin: 30px auto;
-  border: 1px solid $outline !important;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px !important;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-  cursor: pointer;
-  transition: 0.4s;
-  
-}
-
-
-
-.projectcard:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22); 
-}
-.donthover{
-  transform: scale(1, 1);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22); 
-}
-.cards-list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-@media all and (max-width: 500px) {
-  .card-list {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
-}
-
-
-
 
 
 .card-gif {
@@ -216,66 +118,6 @@ a {
     -5px -5px 30px 15px rgba(0,0,0,0.22); 
 }
 
-
-
-.video{
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: 8px !important;
-  border: 1px solid $outline !important;
-}
-
-.uxcard{
-  background-color: rgba(86, 86, 86, 0.1)!important;
-  padding: 24px !important;
-  border-radius: 8px !important;
-  border: 1px solid $outline !important;
-  border-radius: 8px !important;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22) !important;
-  transition: 0.4s;
-}
-
-
-.ux img{
-  
-  border-radius: 8px !important;
-  border: 1px solid $outline !important;
-  
-  width: 100% !important;
-  height: 100% !important;
-}
-
-
-
-
-
-
-
-
-
-
-//////Todo
-
-
-/* input{
-  width: 100% !important;
-  box-sizing:border-box !important;
-  display: block !important;
-  position: relative !important;
-}
- */
-.todo{
-  background-color: $background;
-  border: 1px solid $outline !important;
-  padding: 24px;
-  border-radius: 8px;
-}
-
-.done {
-  text-decoration: line-through;
-}
-
-
 .todobutton{
   height: 48px;
 }
@@ -287,11 +129,9 @@ a {
 .list-group-item {
   position: relative;
   display: block;
-  //padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
   text-decoration: none;
   background-color: $background;
   color: #eee  !important;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
   font-size: 16px;
   display: block !important;
@@ -299,78 +139,19 @@ a {
 }
 
 
-
-
-.danger{
-  width: 50px;
-  transition: all 0.1s ease 0s;
-  height: 48%;
-  justify-content: center;
-  -moz-box-align: center;
-  background-color: #ff7b72 !important;
-  --bs-btn-border-color: #ff7b72 !important;
-  color: $text-primary;
-  align-items: center;
-  -moz-box-pack: center;
-  display: flex;
-  border-radius: 5px 5px 5px 5px !important;
-  border: 0px none;
-  cursor: pointer;
-  height: 48px;
-}
-
 .add {
-  width: 25%;
   transition: all 0.1s ease 0s;
   height: 100%;
   justify-content: center;
-  -moz-box-align: center;
   background-color: $primary;
   color: $text-primary;
   align-items: center;
-  -moz-box-pack: center;
   display: flex;
   border-radius: 0px 5px 5px 0px !important;
   border: 0px none;
   cursor: pointer;
   height: 48px;
 }
-
-.green{
-  width: 50px;
-  
-  height: 48%;
-  justify-content: center;
-  -moz-box-align: center;
-  background-color:  #7ee787 !important;
-  --bs-btn-border-color: #7ee787 !important;
-  color: black !important;
-  align-items: center;
-  -moz-box-pack: center;
-  display: flex;
-  border-radius: 5px 5px 5px 5px !important;
-  border: 0px none;
-  cursor: pointer;
-  height: 48px;
-}
-
-.listbuttons{
-  width: 50px;
-  transition: all 0.1s ease 0s;
-  height: 48%;
-  justify-content: center;
-  -moz-box-align: center;
-  background-color: $primary;
-  color: $text-primary;
-  align-items: center;
-  -moz-box-pack: center;
-  display: flex;
-  border-radius: 5px 5px 5px 5px !important;
-  border: 0px none;
-  cursor: pointer;
-  height: 48px;
-}
-
 
 .form {
   height: 48px;
@@ -385,76 +166,4 @@ a {
   display: block;
   color: var(--text-primary);
   transition: all 0.1s ease 0s;
-}
-
-
-
-//TEXT STYLES
-
-
-.h1 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 56px;
-  line-height: 150%;
-}
-
-.h2 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 150%;
-
-}
-
-.h3 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 33px;
-  line-height: 150%;
-}
-
-.h4 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 150%;
-
-}
-
-.h5 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 200;
-  font-size: 23px;
-  line-height: 150%;
-  color: $secondary;
-}
-
-.h6 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 150%;
-}
-
-.p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.caption {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 150%;
 }
